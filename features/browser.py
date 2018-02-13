@@ -9,5 +9,5 @@ class Browser(object):
     driver.maximize_window()
 
 
-    def close(context):
+def close(context):
         context.driver.close()

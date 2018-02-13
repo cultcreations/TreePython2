@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from browser import Browser
+from features.browser import Browser
 
 
 class SearchResultsPageLocator(object):
@@ -24,7 +24,6 @@ class SearchResultsPage(Browser):
     def get_page_title(self):
         return self.driver.title
 
-
-    def findelementtext(self, *locator):
-        elementtext = self.driver.find_element(*locator).text
-        return elementtext
+    def find_element_text(self, *locator):
+        element_text = self.driver.find_element(*locator).text
+        return element_text
