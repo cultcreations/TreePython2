@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
-from features.browser import Browser
+from features.browser import *
+from features.pages.page_base import *
 
 
 class SearchResultsPageLocator(object):
@@ -9,7 +10,8 @@ class SearchResultsPageLocator(object):
     SEARCH_RESULT = (By.CSS_SELECTOR, "[class='search-info__title violet']")
 
 
-class SearchResultsPage(Browser):
+class SearchResultsPage(PageBase):
+
     # Search Results Page Actions
 
     def fill(self, text, *locator):
