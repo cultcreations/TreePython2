@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-from features.browser import *
 from features.pages.page_base import *
 
 
