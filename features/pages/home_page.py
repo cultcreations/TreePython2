@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from features.browser import Browser
+from features.pages.page_base import *
 
 
 class HomePageLocator(object):
@@ -10,7 +10,8 @@ class HomePageLocator(object):
     SUBMIT_BUTTON = (By.CSS_SELECTOR, "[name='search-btn']")
 
 
-class HomePage(Browser):
+class HomePage(PageBase):
+
     # Home Page Actions
 
     def fill(self, text, *locator):
